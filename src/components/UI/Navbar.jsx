@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
   return (
     <navbar className='navbar bg-base-100 shadow-sm'>
@@ -29,19 +31,19 @@ const Navbar = () => {
             className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow'
           >
             <li>
-              <a>Inicio</a>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <a>Inscripciones</a>
+              <Link>Inscripciones</Link>
             </li>
             <li>
-              <a>¿Quiénes Somos?</a>
+              <Link>¿Quiénes Somos?</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className='navbar-center'>
-        <a className='btn btn-ghost text-xl'>Gómez De Mendiola</a>
+        <Link to="/" className='btn btn-ghost text-xl'>Gómez De Mendiola</Link>
       </div>
       <div className='navbar-end'></div>
     </navbar>
