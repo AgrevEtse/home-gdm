@@ -63,11 +63,10 @@ const EscolaridadCard = ({
           </ul>
         </div>
 
-        <p className='mt-2 text-xs italic'>(Si se paga en julio 2026)</p>
-
         {/* Precio principal */}
-        <div className='mt-6'>
-          <p className='text-sm'>Costo total</p>
+       <div className='mt-6'>
+          <p className='text-sm'>Costo con descuento</p>
+          <p className='mt-2 text-xs italic'>(Si se paga en julio 2026)</p>
           <h4 className='text-primary text-3xl font-extrabold'>
             {formatCurrency.format(costo)}
           </h4>
