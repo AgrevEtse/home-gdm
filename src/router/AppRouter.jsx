@@ -14,10 +14,10 @@ const AppRouter = () => {
             element={<Home />}
           />
 
-          <Route
+          {/* <Route
             path='preescolar'
             element={<PreescolarInfo />}
-          />
+          /> */}
         </Route>
       </Routes>
     </BrowserRouter>

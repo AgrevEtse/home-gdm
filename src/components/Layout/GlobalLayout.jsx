@@ -9,7 +9,7 @@ const GlobalLayout = () => {
       <header className='p-4'>
         <Navbar />
       </header>
-      <main className='flex-1 p-4 flex flex-col items-center justify-center'>
+      <main className='flex flex-1 flex-col items-center justify-center p-4'>
         <Outlet />
       </main>
       <footer className='p-4 text-sm'>

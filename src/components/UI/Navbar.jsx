@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <navbar className='navbar bg-base-100 shadow-sm'>
+    <nav className='navbar bg-base-100 shadow-sm'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div
@@ -31,22 +31,29 @@ const Navbar = () => {
             className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow'
           >
             <li>
-              <Link to="/">Inicio</Link>
+              <Link to='/'>Inicio</Link>
             </li>
             <li>
-              <Link>Inscripciones</Link>
+              <Link to='https://formulario.gomezdemendiola.net'>
+                Inscripciones
+              </Link>
             </li>
-            <li>
+            {/* <li>
               <Link>¿Quiénes Somos?</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
       <div className='navbar-center'>
-        <Link to="/" className='btn btn-ghost text-xl'>Gómez De Mendiola</Link>
+        <Link
+          to='/'
+          className='btn btn-ghost text-xl'
+        >
+          Escuela Gómez De Mendiola
+        </Link>
       </div>
       <div className='navbar-end'></div>
-    </navbar>
+    </nav>
   )
 }
 
