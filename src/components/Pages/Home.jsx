@@ -8,7 +8,7 @@ const Home = () => {
         pagoInicial={3916}
         costo={3087}
         mensualidad={2050}
-        encargado='Profa. Beatriz Araceli'
+        encargado='Martha Patricia Corona Vázquez'
       />
 
       <EscolaridadCard
