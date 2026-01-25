@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { TextAlignStart } from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -10,21 +11,7 @@ const Navbar = () => {
             role='button'
             className='btn btn-ghost btn-circle'
           >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-5 w-5'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              {' '}
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M4 6h16M4 12h16M4 18h7'
-              />{' '}
-            </svg>
+            <TextAlignStart className='w-5 h-5'/>
           </div>
           <ul
             tabIndex='-1'
@@ -39,7 +26,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link>¿Quiénes Somos?</Link>
+              <Link to='/quienes-somos'>¿Quiénes Somos?</Link>
             </li>
           </ul>
         </div>

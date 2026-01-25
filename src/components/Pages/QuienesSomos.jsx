@@ -1,4 +1,5 @@
 import { Goal, ScanEye, MessageSquareHeart, Church } from 'lucide-react'
+
 const QuienesSomos = () => {
   return (
     <section className='bg-base-100 px-6 py-16'>
@@ -48,11 +49,19 @@ const QuienesSomos = () => {
           </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <ul className='space-y-1 text-sm text-gray-600'>
-            <li>✓ Fe</li>
-            <li>✓ Respeto</li>
-            <li>✓ Responsabilidad</li>
-            <li>✓ Solidaridad</li>
-            <li>✓ Honestidad</li>
+            <li className='before:text-success before:content-["✓_"]'>Fe</li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Respeto
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Responsabilidad
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Solidaridad
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Honestidad
+            </li>
           </ul>
         </div>
       </div>

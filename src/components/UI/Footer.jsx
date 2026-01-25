@@ -14,6 +14,7 @@ const Footer = () => {
           {new Date().getFullYear()}
         </p>
       </aside>
+      {/* TODO: Cambiar estos svg por iconos de lucide */}
       {/* <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
         <Link>
           <svg

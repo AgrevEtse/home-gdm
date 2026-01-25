@@ -51,20 +51,20 @@ const EscolaridadCard = ({
         <div className='mt-4 text-sm'>
           <p className='mb-2 font-semibold'>Incluye:</p>
           <ul className='space-y-1'>
-            <li className='before:text-success before:content-["✓"]'>
+            <li className='before:text-success before:content-["✓_"]'>
               Inscripción
             </li>
-            <li className='before:text-success before:content-["✓"]'>
+            <li className='before:text-success before:content-["✓_"]'>
               Plataforma
             </li>
-            <li className='before:text-success before:content-["✓"]'>
+            <li className='before:text-success before:content-["✓_"]'>
               Seguro Escolar
             </li>
           </ul>
         </div>
 
         {/* Precio principal */}
-       <div className='mt-6'>
+        <div className='mt-6'>
           <p className='text-sm'>Costo con descuento</p>
           <p className='mt-2 text-xs italic'>(Si se paga en julio 2026)</p>
           <h4 className='text-primary text-3xl font-extrabold'>
