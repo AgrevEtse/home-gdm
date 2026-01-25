@@ -1,3 +1,4 @@
+import { Goal, ScanEye, MessageSquareHeart, Church } from 'lucide-react'
 const QuienesSomos = () => {
   return (
     <section className='bg-base-100 px-6 py-16'>
@@ -16,7 +17,9 @@ const QuienesSomos = () => {
       <div className='mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-3'>
         {/* Misión */}
         <div className='card bg-base-100 rounded-xl p-6 text-center shadow-md transition-all hover:scale-105 hover:shadow-xl'>
-          <h3 className='text-primary mb-2 text-2xl font-bold'>🎯 Misión</h3>
+          <h3 className='text-primary mb-2 text-2xl font-bold'>
+            <Goal className='mr-2 inline-block text-lime-500' /> Misión
+          </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <p className='text-sm text-gray-600'>
             Formar integralmente a nuestros alumnos con excelencia académica,
@@ -27,7 +30,9 @@ const QuienesSomos = () => {
 
         {/* Visión */}
         <div className='card bg-base-100 rounded-xl p-6 text-center shadow-md transition-all hover:scale-105 hover:shadow-xl'>
-          <h3 className='text-primary mb-2 text-2xl font-bold'>👁️ Visión</h3>
+          <h3 className='text-primary mb-2 text-2xl font-bold'>
+            <ScanEye className='mr-2 inline-block text-indigo-700' /> Visión
+          </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <p className='text-sm text-gray-600'>
             Ser una institución educativa reconocida por su calidad académica,
@@ -37,7 +42,10 @@ const QuienesSomos = () => {
 
         {/* Valores */}
         <div className='card bg-base-100 rounded-xl p-6 text-center shadow-md transition-all hover:scale-105 hover:shadow-xl'>
-          <h3 className='text-primary mb-2 text-2xl font-bold'>❤️ Valores</h3>
+          <h3 className='text-primary mb-2 text-2xl font-bold'>
+            <MessageSquareHeart className='mr-2 inline-block text-rose-700' />{' '}
+            Valores
+          </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <ul className='space-y-1 text-sm text-gray-600'>
             <li>✓ Fe</li>
@@ -52,7 +60,8 @@ const QuienesSomos = () => {
       {/* Identidad Católica */}
       <div className='bg-base-200 mx-auto mt-20 max-w-4xl rounded-xl p-8 text-center shadow-inner'>
         <h2 className='text-primary mb-3 text-3xl font-bold'>
-          ✝️ Identidad Católica
+          <Church className='mr-2 inline-block text-amber-800' /> Identidad
+          Católica
         </h2>
         <p className='text-gray-600'>
           En el Colegio Gómez de Mendiola promovemos una educación basada en el
