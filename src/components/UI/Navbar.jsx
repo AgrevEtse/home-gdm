@@ -38,9 +38,9 @@ const Navbar = () => {
                 Inscripciones
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link>¿Quiénes Somos?</Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>
