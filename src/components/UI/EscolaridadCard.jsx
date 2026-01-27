@@ -81,11 +81,11 @@ const EscolaridadCard = ({
         </p>
 
         {/* Botón */}
-        {/* <div className='card-actions mt-6 justify-center'>
-              <Link to={`/${escolaridad.toLowerCase()}`}>
-                <button className='btn btn-primary px-6'>Más información</button>
-              </Link>
-            </div> */}
+        <div className='card-actions mt-6 justify-center'>
+          <Link to={`/${escolaridad.toLowerCase()}`}>
+            <button className='btn btn-primary px-6'>Más información</button>
+          </Link>
+        </div>
 
         {/* Divider */}
         <div className='divider my-4'></div>
