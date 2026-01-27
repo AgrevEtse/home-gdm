@@ -11,7 +11,7 @@ const Navbar = () => {
             role='button'
             className='btn btn-ghost btn-circle'
           >
-            <TextAlignStart className='w-5 h-5'/>
+            <TextAlignStart className='h-5 w-5' />
           </div>
           <ul
             tabIndex='-1'
@@ -21,7 +21,10 @@ const Navbar = () => {
               <Link to='/'>Inicio</Link>
             </li>
             <li>
-              <Link to='https://formulario.gomezdemendiola.net'>
+              <Link
+                to='https://formulario.gomezdemendiola.net'
+                target='_blank'
+              >
                 Inscripciones
               </Link>
             </li>
