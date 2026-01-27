@@ -14,6 +14,22 @@ const QuienesSomos = () => {
         </p>
       </div>
 
+      {/* descripción */}
+      <div className='bg-base-200 mx-auto mt-10 max-w-4xl rounded-xl p-8 text-center shadow-inner'>
+        <p className='text-base leading-relaxed text-gray-600'>
+          El{' '}
+          <span className='text-primary font-semibold'>
+            Colegio Gómez de Mendiola
+          </span>{' '}
+          es una institución católica de más de 70 años de experiencia
+          educativa, donde nuestra prioridad son sus hijos y, nuestro objetivo,
+          es ser la mejor alternativa educacional para ellos. Contamos con
+          maestros altamente capacitados para desarrollar en los alumnos,
+          conocimientos, habilidades y valores universales, que los conduzcan a
+          ser personas exitosas.
+        </p>
+      </div>
+
       {/* Cards */}
       <div className='mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-3'>
         {/* Misión */}

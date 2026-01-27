@@ -4,6 +4,7 @@ import GlobalLayout from '@/components/Layout/GlobalLayout'
 import Home from '@/components/Pages/Home'
 import QuienesSomos from '@/components/Pages/QuienesSomos'
 import PreescolarInfo from '@/components/Pages/PreescolarInfo'
+import PrimariaInfo from '@/components/Pages/PrimariaInfo'
 
 const AppRouter = () => {
   return (
@@ -24,6 +25,10 @@ const AppRouter = () => {
             path='preescolar'
             element={<PreescolarInfo />}
           /> */}
+          <Route
+            path='primaria'
+            element={<PrimariaInfo />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
