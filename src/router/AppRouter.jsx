@@ -5,6 +5,9 @@ import Home from '@/components/Pages/Home'
 import QuienesSomos from '@/components/Pages/QuienesSomos'
 import PreescolarInfo from '@/components/Pages/PreescolarInfo'
 import PrimariaInfo from '@/components/Pages/PrimariaInfo'
+import SecundariaInfo from '@/components/Pages/SecundariaInfo'
+import BachilleratoInfo from '@/components/Pages/BachilleratoInfo'
+import NotFound404 from '@/components/Pages/NotFound404'
 
 const AppRouter = () => {
   return (
@@ -21,13 +24,29 @@ const AppRouter = () => {
             element={<QuienesSomos />}
           />
 
-          {/* <Route
+          <Route
             path='preescolar'
             element={<PreescolarInfo />}
-          /> */}
+          />
+
           <Route
             path='primaria'
             element={<PrimariaInfo />}
+          />
+
+          <Route
+            path='secundaria'
+            element={<SecundariaInfo />}
+          />
+
+          {/* <Route
+            path='bachillerato'
+            element={<BachilleratoInfo />}
+          /> */}
+
+          <Route
+            path='*'
+            element={<NotFound404 />}
           />
         </Route>
       </Routes>

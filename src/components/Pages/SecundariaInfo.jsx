@@ -3,9 +3,9 @@ import { BookOpen, Heart, Users, Monitor } from 'lucide-react'
 
 import { cambiarTitulo } from '@/utils/cambiarTitulo'
 
-const PreescolarInfo = () => {
+const SecundariaInfo = () => {
   useEffect(() => {
-    cambiarTitulo('Preescolar')
+    cambiarTitulo('Secundaria')
   }, [])
 
   return (
@@ -13,7 +13,7 @@ const PreescolarInfo = () => {
       {/* Header */}
       <div className='mx-auto max-w-5xl text-center'>
         <h1 className='text-primary text-4xl font-extrabold uppercase'>
-          Preescolar 🧸
+          Secundaria 🔬
         </h1>
         <div className='bg-secondary mx-auto my-4 h-1 w-32 rounded' />
         <p className='text-lg text-gray-600'>
@@ -98,7 +98,7 @@ const PreescolarInfo = () => {
       {/* Cierre */}
       <div className='bg-base-200 mx-auto mt-20 max-w-3xl rounded-xl p-8 text-center shadow-inner'>
         <p className='text-sm text-gray-600 italic'>
-          “La educación en el preescolar es la base para formar personas
+          “La educación en la secundaria es la base para formar personas
           íntegras, responsables y comprometidas con su comunidad.”
         </p>
       </div>
@@ -106,4 +106,4 @@ const PreescolarInfo = () => {
   )
 }
 
-export default PreescolarInfo
+export default SecundariaInfo

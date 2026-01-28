@@ -1,6 +1,13 @@
+import { useEffect } from 'react'
 import { BookOpen, Heart, Users, Monitor } from 'lucide-react'
 
+import { cambiarTitulo } from '@/utils/cambiarTitulo'
+
 const PrimariaInfo = () => {
+  useEffect(() => {
+    cambiarTitulo('Primaria')
+  }, [])
+
   return (
     <section className='bg-base-100 px-6 py-16'>
       {/* Header */}
@@ -23,11 +30,21 @@ const PrimariaInfo = () => {
             Formación Académica
           </h2>
           <ul className='mt-4 space-y-2 text-sm text-gray-600'>
-            <li>✓ Lectura y comprensión lectora</li>
-            <li>✓ Matemáticas y pensamiento lógico</li>
-            <li>✓ Ciencias naturales</li>
-            <li>✓ Introducción a la tecnología</li>
-            <li>✓ Inglés</li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Lectura y comprensión lectora
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Matemáticas y pensamiento lógico
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Ciencias naturales
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Introducción a la tecnología
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Inglés
+            </li>
           </ul>
         </div>
 
@@ -50,10 +67,18 @@ const PrimariaInfo = () => {
             Actividades Complementarias
           </h2>
           <ul className='mt-4 space-y-2 text-sm text-gray-600'>
-            <li>✓ Educación física</li>
-            <li>✓ Eventos culturales y cívicos</li>
-            <li>✓ Actividades religiosas</li>
-            <li>✓ Trabajo colaborativo</li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Educación física
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Eventos culturales y cívicos
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Actividades religiosas
+            </li>
+            <li className='before:text-success before:content-["✓_"]'>
+              Trabajo colaborativo
+            </li>
           </ul>
         </div>
 

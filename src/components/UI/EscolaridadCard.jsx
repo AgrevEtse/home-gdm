@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const EscolaridadCard = ({
   escolaridad,
   pagoInicial,
-  costo,
+  costoDescuento,
   mensualidad,
   encargado
 }) => {
@@ -66,9 +66,11 @@ const EscolaridadCard = ({
         {/* Precio principal */}
         <div className='mt-6'>
           <p className='text-sm'>Costo con descuento</p>
-          <p className='mt-2 text-xs italic'>(Si se paga en julio 2026)</p>
+          <p className='mt-2 text-xs italic'>
+            (Si se paga en julio {new Date().getFullYear()})
+          </p>
           <h4 className='text-primary text-3xl font-extrabold'>
-            {formatCurrency.format(costo)}
+            {formatCurrency.format(costoDescuento)}
           </h4>
           <p className='mt-1 text-sm font-semibold'>
             10 colegiaturas de {formatCurrency.format(mensualidad)}
@@ -77,7 +79,8 @@ const EscolaridadCard = ({
 
         {/* Fechas */}
         <p className='mt-3 text-xs text-gray-500'>
-          Septiembre 2026 - Junio 2027
+          Septiembre {new Date().getFullYear()} - Junio{' '}
+          {new Date().getFullYear() + 1}
         </p>
 
         {/* Botón */}
