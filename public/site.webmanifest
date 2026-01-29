@@ -1,6 +1,6 @@
 {
-  "name": "GDM Admin",
-  "short_name": "GDM Admin",
+  "name": "GDM Home",
+  "short_name": "GDM Home",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
