@@ -10,7 +10,7 @@ const Footer = () => {
           className='w-12'
         />
         <p>
-          Escuela Gómez de Mendiola, Cultura Popular A.C. -{' '}
+          Colegio Gómez de Mendiola, Cultura Popular A.C. -{' '}
           {new Date().getFullYear()}
         </p>
       </aside>

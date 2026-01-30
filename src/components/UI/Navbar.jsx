@@ -5,7 +5,13 @@ const Navbar = () => {
   return (
     <nav className='navbar bg-base-100 shadow-sm'>
       <div className='navbar-start'>
-        <div className='dropdown'>
+        <Link
+          to='/'
+          className='btn btn-ghost hidden text-xl md:block'
+        >
+          Colegio Gómez De Mendiola
+        </Link>
+        <div className='dropdown md:hidden'>
           <div
             tabIndex={0}
             role='button'
@@ -29,20 +35,41 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to='/quienes-somos'>¿Quiénes Somos?</Link>
+              <Link to='/escolaridades'>Escolaridades</Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className='navbar-center'>
+      <div className='navbar-center'></div>
+      <div className='navbar-end'>
         <Link
           to='/'
-          className='btn btn-ghost text-xl'
+          className='btn btn-ghost block text-xl md:hidden'
         >
-          Escuela Gómez De Mendiola
+          Colegio Gómez De Mendiola
         </Link>
+        <div className='hidden space-x-3 md:block'>
+          <Link
+            to='/'
+            className='btn btn-ghost'
+          >
+            Inicio
+          </Link>
+          <Link
+            className='btn btn-ghost'
+            to='https://formulario.gomezdemendiola.net'
+            target='_blank'
+          >
+            Inscripciones
+          </Link>
+          <Link
+            to='/escolaridades'
+            className='btn btn-ghost'
+          >
+            Escolaridades
+          </Link>
+        </div>
       </div>
-      <div className='navbar-end'></div>
     </nav>
   )
 }
