@@ -53,6 +53,8 @@ const Escolaridades = () => {
           costoDescuento={precio.costo_descuento}
           mensualidad={precio.costo_mensualidad}
           encargado={precio.nombre_contacto}
+          email={precio.email_contacto}
+          numero={precio.numero_contacto}
         />
       ))}
     </div>

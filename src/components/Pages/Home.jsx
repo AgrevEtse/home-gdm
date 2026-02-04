@@ -12,27 +12,28 @@ const Home = () => {
   return (
     <section className='bg-base-100 px-6 py-16'>
       {/* Header */}
+      <img
+        src='/EscudoGdM.png'
+        alt='Logo Colegio Gómez de Mendiola'
+        className='mx-auto h-60'
+      />
       <div className='mx-auto max-w-5xl text-center'>
-        <h1 className='text-primary text-4xl font-extrabold uppercase'>
-          Colegio Gómez de Mendiola
-        </h1>
         <div className='bg-secondary mx-auto my-4 h-1 w-32 rounded' />
-        <p className='text-lg text-gray-600'>¿Quiénes Somos?</p>
+        <h1 className='text-lg text-gray-600'>¿Quiénes Somos?</h1>
       </div>
 
       {/* descripción */}
       <div className='bg-base-200 mx-auto mt-10 max-w-4xl rounded-xl p-8 text-center shadow-inner'>
         <p className='text-base leading-relaxed text-gray-600'>
-          El{' '}
+          {' '}
           <span className='text-primary font-semibold'>
-            Colegio Gómez de Mendiola
+            Somos una institución católica
           </span>{' '}
-          es una institución católica de más de 70 años de experiencia
-          educativa, donde nuestra prioridad son sus hijos y, nuestro objetivo,
-          es ser la mejor alternativa educacional para ellos. Contamos con
-          maestros altamente capacitados para desarrollar en los alumnos,
-          conocimientos, habilidades y valores universales, que los conduzcan a
-          ser personas exitosas.
+          con más de 70 años de experiencia educativa, donde nuestra prioridad
+          son sus hijos y, nuestro objetivo, es ser la mejor alternativa
+          educacional para ellos. Contamos con maestros altamente capacitados
+          para desarrollar en los alumnos, conocimientos, habilidades y valores
+          universales, que los conduzcan a ser personas exitosas.
         </p>
       </div>
 

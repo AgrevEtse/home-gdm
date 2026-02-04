@@ -5,7 +5,9 @@ const EscolaridadCard = ({
   pagoInicial,
   costoDescuento,
   mensualidad,
-  encargado
+  encargado,
+  email,
+  numero
 }) => {
   const formatCurrency = new Intl.NumberFormat('es-MX', {
     style: 'currency',
@@ -96,6 +98,8 @@ const EscolaridadCard = ({
         {/* Encargado */}
         <p className='text-xs text-gray-500'>Atención con Control Escolar</p>
         <p className='text-sm font-bold'>{encargado}</p>
+        <p className='text-xs text-gray-500'>Whatsapp: {numero}</p>
+        <p className='text-xs text-gray-500'>Correo de contacto: {email}</p>
       </div>
     </div>
   )
