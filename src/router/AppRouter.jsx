@@ -7,6 +7,8 @@ import PreescolarInfo from '@/components/Pages/PreescolarInfo'
 import PrimariaInfo from '@/components/Pages/PrimariaInfo'
 import SecundariaInfo from '@/components/Pages/SecundariaInfo'
 import BachilleratoInfo from '@/components/Pages/BachilleratoInfo'
+import IdukayInfo from '@/components/Pages/IdukayInfo'
+import MattildaInfo from '@/components/Pages/MattildaInfo'
 import NotFound404 from '@/components/Pages/NotFound404'
 
 const AppRouter = () => {
@@ -43,6 +45,16 @@ const AppRouter = () => {
             path='bachillerato'
             element={<BachilleratoInfo />}
           /> */}
+
+          <Route
+            path='idukay'
+            element={<IdukayInfo />}
+          />
+
+          <Route
+            path='mattilda'
+            element={<MattildaInfo />}
+          />
 
           <Route
             path='*'

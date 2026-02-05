@@ -51,6 +51,18 @@ const Home = () => {
         >
           Escolaridades
         </Link>
+        <Link
+          to='/idukay'
+          className='btn btn-secondary'
+        >
+          Idukay
+        </Link>
+        <Link
+          to='/mattilda'
+          className='btn btn-secondary'
+        >
+          Mattilda
+        </Link>
       </div>
 
       {/* Cards */}

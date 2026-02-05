@@ -37,6 +37,12 @@ const Navbar = () => {
             <li>
               <Link to='/escolaridades'>Escolaridades</Link>
             </li>
+            <li>
+              <Link to='/idukay'>Idukay</Link>
+            </li>
+            <li>
+              <Link to='/mattilda'>Mattilda</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -67,6 +73,18 @@ const Navbar = () => {
             className='btn btn-ghost'
           >
             Escolaridades
+          </Link>
+          <Link
+            to='/idukay'
+            className='btn btn-ghost'
+          >
+            Idukay
+          </Link>
+          <Link
+            to='/mattilda'
+            className='btn btn-ghost'
+          >
+            Mattilda
           </Link>
         </div>
       </div>
