@@ -74,9 +74,11 @@ const Home = () => {
           </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <p className='text-sm text-gray-600'>
-            Formar integralmente a nuestros alumnos con excelencia académica,
-            valores cristianos y un profundo sentido humano, guiados por la fe
-            católica.
+            Laborar con denuedo, apegados al lineamiento de la «S.E.P.», en la
+            formación integral de todos los miembros de esta institución; para
+            lograr en cada uno de ellos, un ser humano creativo, autónomo,
+            constructivo, libre, responsable y capaz de integrarse a la
+            sociedad.
           </p>
         </div>
 

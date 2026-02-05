@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import WhatsappBtn from './WhatsappBtn'
 
 const EscolaridadCard = ({
   escolaridad,
@@ -90,6 +91,7 @@ const EscolaridadCard = ({
           <Link to={`/${escolaridad.toLowerCase()}`}>
             <button className='btn btn-primary px-6'>Más información</button>
           </Link>
+          <WhatsappBtn numero={numero} />
         </div>
 
         {/* Divider */}
