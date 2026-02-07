@@ -1,31 +1,21 @@
-import { MessageSquareDot } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
-const WhatsAppIcon = () => {
-  return (
-    <MessageSquareDot
-      className='text-green-500'
-      size={28}
-    />
-  )
-}
+import { WhatsappLogo } from '@/assets/icons'
 
 const WhatsappBtn = ({ numero }) => {
   const phoneNumber = numero
-  const message = `Hola buenas tardes, me gustaría recibir más información por favor.`
-
-  const sendWhatsApp = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-    window.open(url, '_blank')
-  }
+  const message = `Hola buenas tardes, me gustaría recibir más información sobre la escuela Gomez de Mendiola`
 
   return (
-    <button
-      onClick={sendWhatsApp}
-      className='flex items-center gap-2 rounded-lg bg-green-500 px-4 py-2 text-white shadow-md transition hover:bg-green-600'
+    <Link
+      to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+      target='_blank'
     >
-      <MessageSquareDot size={22} />
-      <span className='font-medium'>Enviar WhatsApp</span>
-    </button>
+      <button className='btn flex items-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-emerald-950 shadow-md transition-colors hover:bg-emerald-600'>
+        <WhatsappLogo className='h-8' />
+        <span className='font-medium'>Enviar WhatsApp</span>
+      </button>
+    </Link>
   )
 }
 export default WhatsappBtn

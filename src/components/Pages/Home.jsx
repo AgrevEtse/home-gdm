@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Goal, ScanEye, MessageSquareHeart, Church } from 'lucide-react'
 
+import { Target, Binoculars, HandHeart, Church } from '@/assets/icons'
 import { cambiarTitulo } from '@/utils/cambiarTitulo'
 
 const Home = () => {
@@ -70,7 +70,7 @@ const Home = () => {
         {/* Misión */}
         <div className='card bg-base-100 rounded-xl p-6 text-center shadow-md transition-all hover:scale-105 hover:shadow-xl'>
           <h3 className='text-primary mb-2 text-2xl font-bold'>
-            <Goal className='mr-2 inline-block text-lime-500' /> Misión
+            <Target className='mr-2 inline-block h-8 text-lime-500' /> Misión
           </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <p className='text-sm text-gray-600'>
@@ -85,7 +85,8 @@ const Home = () => {
         {/* Visión */}
         <div className='card bg-base-100 rounded-xl p-6 text-center shadow-md transition-all hover:scale-105 hover:shadow-xl'>
           <h3 className='text-primary mb-2 text-2xl font-bold'>
-            <ScanEye className='mr-2 inline-block text-indigo-700' /> Visión
+            <Binoculars className='mr-2 inline-block h-8 text-indigo-700' />{' '}
+            Visión
           </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
           <p className='text-sm text-gray-600'>
@@ -97,7 +98,7 @@ const Home = () => {
         {/* Valores */}
         <div className='card bg-base-100 rounded-xl p-6 text-center shadow-md transition-all hover:scale-105 hover:shadow-xl'>
           <h3 className='text-primary mb-2 text-2xl font-bold'>
-            <MessageSquareHeart className='mr-2 inline-block text-rose-700' />{' '}
+            <HandHeart className='mr-2 inline-block h-8 text-rose-700' />{' '}
             Valores
           </h3>
           <div className='bg-secondary mx-auto mb-4 h-1 w-20 rounded' />
@@ -122,7 +123,7 @@ const Home = () => {
       {/* Identidad Católica */}
       <div className='bg-base-200 mx-auto mt-20 max-w-4xl rounded-xl p-8 text-center shadow-inner'>
         <h2 className='text-primary mb-3 text-3xl font-bold'>
-          <Church className='mr-2 inline-block text-amber-800' /> Identidad
+          <Church className='mr-2 inline-block h-10 text-amber-800' /> Identidad
           Católica
         </h2>
         <p className='text-gray-600'>

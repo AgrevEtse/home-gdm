@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import WhatsappBtn from './WhatsappBtn'
+
+import WhatsappBtn from '@/components/UI/WhatsappBtn'
 
 const EscolaridadCard = ({
   escolaridad,

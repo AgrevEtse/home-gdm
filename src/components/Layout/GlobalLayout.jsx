@@ -12,9 +12,7 @@ const GlobalLayout = () => {
       <main className='flex flex-1 flex-col items-center justify-center p-4'>
         <Outlet />
       </main>
-      <footer className='p-4 text-sm'>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   )
 }

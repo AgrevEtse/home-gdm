@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 import { cambiarTitulo } from '@/utils/cambiarTitulo'
-import EscolaridadCardSkeleton from '@/components/UI/EscolaridadCardSkeleton'
 import EscolaridadCard from '@/components/UI/EscolaridadCard'
+import EscolaridadCardSkeleton from '@/components/UI/EscolaridadCardSkeleton'
 
 const API_URL = import.meta.env.VITE_API_URL
 

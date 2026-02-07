@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { TextAlignStart } from 'lucide-react'
+
+import { List } from '@/assets/icons'
 
 const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ const Navbar = () => {
             role='button'
             className='btn btn-ghost btn-circle'
           >
-            <TextAlignStart className='h-5 w-5' />
+            <List className='w-6' />
           </div>
           <ul
             tabIndex='-1'

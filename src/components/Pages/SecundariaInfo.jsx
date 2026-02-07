@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import { BookOpen, Heart, Users, Monitor } from 'lucide-react'
 
+import { BookOpen, Heart, Users, Monitor } from '@/assets/icons'
 import { cambiarTitulo } from '@/utils/cambiarTitulo'
 
 const SecundariaInfo = () => {
