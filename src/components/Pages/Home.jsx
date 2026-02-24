@@ -39,13 +39,6 @@ const Home = () => {
 
       <div className='mt-8 flex justify-center gap-4'>
         <Link
-          to='https://formulario.gomezdemendiola.net'
-          target='_blank'
-          className='btn btn-secondary'
-        >
-          Inscripciones
-        </Link>
-        <Link
           to='/escolaridades'
           className='btn btn-secondary'
         >

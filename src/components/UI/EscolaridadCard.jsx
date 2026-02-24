@@ -96,12 +96,15 @@ const EscolaridadCard = ({
               Más Información
             </button>
           </Link>
-          <Link to='https://formulario.gomezdemendiola.net'>
-            <button className='btn btn-info px-6'>
-              <ClipboardText className='h-8' />
-              Llenar Inscripción
-            </button>
-          </Link>
+          <a
+            href='https://formulario.gomezdemendiola.net'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='btn btn-info px-6'
+          >
+            <ClipboardText className='h-8' />
+            Llenar Inscripción
+          </a>
           <WhatsappBtn
             numero={numero}
             mensaje={`Hola, me gustaría recibir más información sobre ${escolaridad}.`}

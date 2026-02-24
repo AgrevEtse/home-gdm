@@ -20,12 +20,14 @@ const IdukayInfo = () => {
         <div className='card-body items-center justify-end text-center'>
           <h3 className='card-title'>Nuestro sistema de gestión académica</h3>
           <div className='card-actions justify-end'>
-            <Link
-              to='https://www.idukay.com/'
+            <a
+              href='https://www.idukay.com/'
               target='_blank'
+              rel='noopener noreferrer'
+              className='btn'
             >
-              <button className='btn'>Más información</button>
-            </Link>
+              Más información
+            </a>
           </div>
         </div>
       </div>

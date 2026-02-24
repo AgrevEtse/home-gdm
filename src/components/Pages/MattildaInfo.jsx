@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import WhatsappBtn from '@/components/UI/WhatsappBtn'
 
+import WhatsappBtn from '@/components/UI/WhatsappBtn'
 import { cambiarTitulo } from '@/utils/cambiarTitulo'
+import { SignIn } from '@/assets/icons'
 
 const MattildaInfo = () => {
   useEffect(() => {
@@ -21,12 +22,14 @@ const MattildaInfo = () => {
         <div className='card-body items-center justify-end text-center'>
           <h3 className='card-title'>Nuestro sistema de gestión financiera</h3>
           <div className='card-actions justify-end'>
-            <Link
-              to='https://mattilda.io/'
+            <a
+              href='https://mattilda.io/'
               target='_blank'
+              rel='noopener noreferrer'
+              className='btn'
             >
-              <button className='btn'>Más información</button>
-            </Link>
+              Más información
+            </a>
           </div>
         </div>
       </div>
@@ -90,21 +93,7 @@ const MattildaInfo = () => {
           rel='noopener noreferrer'
           className='btn btn-primary flex w-full items-center gap-2'
         >
-          {/* Icono login */}
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-5 w-5'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5m0 0l-5-5m5 5H3'
-            />
-          </svg>
+          <SignIn className='h-5' />
           Acceder a Mattilda
         </a>
       </div>
@@ -120,24 +109,24 @@ const MattildaInfo = () => {
               Sabados y domingos: Cerrado
             </li>
           </ul>
+          <div className='divider'></div>
+          <div className='flex items-center justify-around gap-2'>
+            <span>Contactar al área de finanzas</span>
+
+            <WhatsappBtn
+              numero={3321074970}
+              mensaje='Hola buenas tardes me puede apoyar con dudas sobre cobranzas'
+            />
+          </div>
+          <div className='flex items-center justify-around gap-2'>
+            <span>Ayuda con Mattilda</span>
+
+            <WhatsappBtn
+              numero={5538036487}
+              mensaje='Hola buenas tardes requiero contactar al sistema de gestión financiera Mattilda'
+            />
+          </div>
         </div>
-      </div>
-
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span>Contactar al área de finanzas</span>
-
-        <WhatsappBtn
-          numero={3321074970}
-          mensaje='Hola buenas tardes me puede apoyar con dudas sobre cobranzas'
-        />
-      </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span>Ayuda con Mattilda</span>
-
-        <WhatsappBtn
-          numero={5538036487}
-          mensaje='Hola buenas tardes requiero contactar al sistema de gestión financiera Mattilda'
-        />
       </div>
 
       <div className='card-lg card-border bg-base-100 w-full shadow-sm md:w-lg'>
@@ -150,9 +139,9 @@ const MattildaInfo = () => {
                 href='/que_es_mattilda.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link link-primary'
+                className='link link-primary before:content-["📄_"]'
               >
-                📄 ¿Qué es Mattilda?
+                ¿Qué es Mattilda?
               </a>
             </li>
 
@@ -161,9 +150,9 @@ const MattildaInfo = () => {
                 href='/linea_de_ayuda.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link link-primary'
+                className='link link-primary before:content-["📄_"]'
               >
-                📄 Línea de ayuda
+                Línea de ayuda
               </a>
             </li>
           </ul>
@@ -180,9 +169,9 @@ const MattildaInfo = () => {
                 href=' https://youtu.be/reV3jo-SPNQ'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link link-primary'
+                className='link link-primary before:content-["▶️_"]'
               >
-                ▶️ ¿Qué es Mattilda y cómo funciona?
+                ¿Qué es Mattilda y cómo funciona?
               </a>
             </li>
 
@@ -191,9 +180,9 @@ const MattildaInfo = () => {
                 href='https://youtu.be/OJVnB-LRHjk'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link link-primary'
+                className='link link-primary before:content-["▶️_"]'
               >
-                ▶️ Estado de cuenta
+                Estado de cuenta
               </a>
             </li>
 
@@ -202,9 +191,9 @@ const MattildaInfo = () => {
                 href='https://youtu.be/OCphpm_GM2I'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='link link-primary'
+                className='link link-primary before:content-["▶️_"]'
               >
-                ▶️ Mattilda bot
+                Mattilda bot
               </a>
             </li>
           </ul>

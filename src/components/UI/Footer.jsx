@@ -17,12 +17,13 @@ const Footer = () => {
         </p>
       </aside>
       <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
-        <Link
-          to='https://www.facebook.com/GomezdeMendiola/?locale=es_LA'
+        <a
+          href='https://www.facebook.com/GomezdeMendiola/?locale=es_LA'
+          rel='noopener noreferrer'
           target='_blank'
         >
           <FacebookLogo className='h-12' />
-        </Link>
+        </a>
       </nav>
     </footer>
   )
