@@ -114,7 +114,7 @@ const MattildaInfo = () => {
             <span>Contactar al área de finanzas</span>
 
             <WhatsappBtn
-              numero={3321074970}
+              numero={3330590347}
               mensaje='Hola buenas tardes me puede apoyar con dudas sobre cobranzas'
             />
           </div>
