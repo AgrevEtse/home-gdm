@@ -96,20 +96,16 @@ const EscolaridadCard = ({
               Más Información
             </button>
           </Link>
-<<<<<<< HEAD
-          <WhatsappBtn numero={numero} />
           <Link to='https://formulario.gomezdemendiola.net'>
             <button className='btn btn-info px-6'>
               <ClipboardText className='h-8' />
               Llenar Inscripción
             </button>
           </Link>
-=======
           <WhatsappBtn
             numero={numero}
             mensaje={`Hola, me gustaría recibir más información sobre ${escolaridad}.`}
           />
->>>>>>> 0c787ec (Cambios mattilda)
         </div>
 
         {/* Divider */}
