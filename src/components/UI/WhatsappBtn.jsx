@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom'
 
 import { WhatsappLogo } from '@/assets/icons'
 
-const WhatsappBtn = ({ numero }) => {
+const WhatsappBtn = ({ numero, mensaje }) => {
   const phoneNumber = numero
-  const message = `Hola buenas tardes, me gustaría recibir más información sobre la escuela Gomez de Mendiola`
+  const message =
+    mensaje ||
+    `Hola buenas tardes, me gustaría recibir más información sobre la escuela Gomez de Mendiola`
 
   return (
     <Link
