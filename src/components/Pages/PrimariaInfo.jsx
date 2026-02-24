@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 
+import DocumentacionCard from '@/components/UI/DocumentacionCard'
 import { BookOpen, Heart, Users, Monitor } from '@/assets/icons'
 import { cambiarTitulo } from '@/utils/cambiarTitulo'
 
@@ -9,7 +10,7 @@ const PrimariaInfo = () => {
   }, [])
 
   return (
-    <section className='bg-base-100 px-6 py-16'>
+    <section className='bg-base-100 flex flex-col items-center justify-center space-y-12 px-6 py-16'>
       {/* Header */}
       <div className='mx-auto max-w-5xl text-center'>
         <h1 className='text-primary text-4xl font-extrabold uppercase'>
@@ -21,8 +22,10 @@ const PrimariaInfo = () => {
         </p>
       </div>
 
+      <DocumentacionCard />
+
       {/* Grid principal */}
-      <div className='mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2'>
+      <div className='mx-auto grid max-w-6xl gap-8 md:grid-cols-2'>
         {/* Formación Académica */}
         <div className='card bg-base-100 rounded-xl p-8 shadow-md'>
           <h2 className='text-primary mb-3 flex items-center gap-2 text-2xl font-bold'>
@@ -96,7 +99,7 @@ const PrimariaInfo = () => {
       </div>
 
       {/* Cierre */}
-      <div className='bg-base-200 mx-auto mt-20 max-w-3xl rounded-xl p-8 text-center shadow-inner'>
+      <div className='bg-base-200 mx-auto max-w-3xl rounded-xl p-8 text-center shadow-inner'>
         <p className='text-sm text-gray-600 italic'>
           “La educación en la primaria es la base para formar personas íntegras,
           responsables y comprometidas con su comunidad.”

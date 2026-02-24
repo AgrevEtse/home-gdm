@@ -4,7 +4,7 @@ import { List } from '@/assets/icons'
 
 const Navbar = () => {
   return (
-    <nav className='navbar bg-base-100 shadow-sm'>
+    <nav className='navbar bg-base-300 shadow-sm'>
       <div className='navbar-start'>
         <Link
           to='/'
@@ -26,14 +26,6 @@ const Navbar = () => {
           >
             <li>
               <Link to='/'>Inicio</Link>
-            </li>
-            <li>
-              <Link
-                to='https://formulario.gomezdemendiola.net'
-                target='_blank'
-              >
-                Inscripciones
-              </Link>
             </li>
             <li>
               <Link to='/escolaridades'>Escolaridades</Link>
@@ -61,13 +53,6 @@ const Navbar = () => {
             className='btn btn-ghost'
           >
             Inicio
-          </Link>
-          <Link
-            className='btn btn-ghost'
-            to='https://formulario.gomezdemendiola.net'
-            target='_blank'
-          >
-            Inscripciones
           </Link>
           <Link
             to='/escolaridades'

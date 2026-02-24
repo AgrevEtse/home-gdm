@@ -11,7 +11,7 @@ const WhatsappBtn = ({ numero }) => {
       to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
       target='_blank'
     >
-      <button className='btn flex items-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-emerald-950 shadow-md transition-colors hover:bg-emerald-600'>
+      <button className='btn flex items-center gap-2 rounded-lg bg-emerald-400 px-4 py-2 text-emerald-950 shadow-md transition-colors hover:bg-emerald-500'>
         <WhatsappLogo className='h-8' />
         <span className='font-medium'>Enviar WhatsApp</span>
       </button>
